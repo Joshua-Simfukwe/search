@@ -5,54 +5,51 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Search</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="Styles/css/index.css">
     </head>
     <body>
-        <!--Navigation-->
-        <nav>
-            <ul>
-                <li><a href="image_search.html">Image search</a></li>
-                <li><a href="Advanced_search.html">Advanced search</a></li>
-            </ul>
-        </nav>
-        
-        <!--Form-->
-        <main>
-            <div>
-                <img src="images/googlelogo_color_272x92dp.png" alt="Logo">
-            </div>
-            <form action="https://google.com/search">
-                <input type="text" name="q">
-                <input type="submit" value="Google Search">
-                <a href=""><input type="button" Value></a>
-            </form>
-        </main>
 
-        <!--Footer-->
-        <footer>
-            <ul>
-                <li><a href="https://about.google/?utm_source=google-ZM&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
-                <li><a href="https://ads.google.com/intl/en_zm/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
-                <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a></li>
-                <li><a href="https://www.google.com/search/howsearchworks/?fg=1">How search works</a></li>
-            </ul>
-            <ul>
-                <li><a href="https://policies.google.com/privacy?hl=en-ZM&fg=1">Privacy</a></li>
-                <li><a href="https://policies.google.com/terms?hl=en-ZM&fg=1">Terms</a></li>
-                <li class="popup" onclick="popFunction()">
-                    <a href="#">Settings</a>
-                    <span class="popup_content" id="settings_popup">
-                        <ul>
-                            <li><a href="https://www.google.com/preferences?hl=en-ZM&fg=1">Search settings</a></li>
-                            <li><a href="Advanced_search.html">Advanced search</a></li>
-                            <li><a href="https://myaccount.google.com/yourdata/search?utm_source=googlemenu&fg=1">Your data in search</a></li>
-                            <li><a href="#">Search history</a></li>
-                            <li><a href="https://support.google.com/websearch/?visit_id=637825052189139308-137442421&hl=en-ZM&rd=2#topic=3378866">Search help</a></li>
-                            <li><a href="#">Search feedback</a></li>
-                        </ul>
-                    </span>
-                </li>
-            </ul>
-        </footer>
+        <div class="container-fluid">
+            <!--Navigation-->
+            <nav>
+                <ul>
+                    <li><a href="image_search.html">Image search</a></li>
+                    <li><a href="Advanced_search.html">Advanced search</a></li>
+                </ul>
+            </nav>
+            
+            <!--Logo and Form-->
+            <main>
+                <div class="main-content">
+                    <img src="images/googlelogo_color_272x92dp.png" alt="Logo">
+                </div>
+                <form action="https://google.com/search" class="main-content">
+                    <div>
+                        <input type="text" name="q">
+                    </div>
+                    <div>
+                        <input type="submit" value="Google Search" class="btn">
+                        <a href="https://www.google.com/doodles"><input type="button" Value="I'm Feeling Lucky" class="btn"></a>   
+                    </div>
+                </form>
+            </main>
+
+            <!--Footer-->
+            <footer>
+                <ul>
+                    <li><a href="https://about.google/?utm_source=google-ZM&utm_medium=referral&utm_campaign=hp-footer&fg=1">About</a></li>
+                    <li><a href="https://ads.google.com/intl/en_zm/home/?subid=ww-ww-et-g-awa-a-g_hpafoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Advertising</a></li>
+                    <li><a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Business</a></li>
+                    <li><a href="https://www.google.com/search/howsearchworks/?fg=1">How search works</a></li>
+                </ul>
+                <ul>
+                    <li><a href="https://policies.google.com/privacy?hl=en-ZM&fg=1">Privacy</a></li>
+                    <li><a href="https://policies.google.com/terms?hl=en-ZM&fg=1">Terms</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </footer>
+        </div>
 
     </body>
 </html>
