@@ -1,2 +1,230 @@
 @use 'common';
 @use 'variables';
+
+
+//navigation
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px;
+    height: 64px;
+    font-size: variables.$nav-links;
+
+
+    .logo {
+
+        display: flex;   
+        max-width: 152px;
+        min-width: 152px;;
+        text-align: center;
+        align-items: center;
+    }
+
+     img {
+        width: 70px;
+        height: 25px;
+     }
+}
+
+//header
+#header {
+    color: variables.$my-red;
+    font-size: 20px;
+    padding: 25px 35px;
+}
+
+.divider {
+    margin: 0 0 20px 0;
+    padding: 0;
+    border-bottom: 1px solid variables.$bg-gray2;
+}
+
+//form
+form {
+    max-width: 1140px;
+    min-width: 200px;
+    width: 80%;
+    margin: 0px 2% 0 45px;
+
+    fieldset {
+        border: none;
+        padding-bottom: 30px;
+    }
+    
+    legend, h3 {
+        width: 169px;
+        height: 30px;
+        font-size: 16px;
+        min-height: 42px;
+        font-weight: 500;
+        color: variables.$text-color1;
+        margin-bottom: -25px;
+    }
+
+    .field {
+        display: flex;
+        flex-flow: column;   
+    }
+
+    label {
+        margin: 20px 0;
+    } 
+
+    input, select {
+        max-width: 169px;
+        height: 29px;
+        border: 1px solid variables.$bg-gray2;
+    }
+
+    input:focus {
+        border: 1px solid variables.$my-blue2;
+        outline: none;
+      }
+
+    select {
+        background-color: variables.$bg-gray;
+        font-size: 11px;
+        font-weight: bold;
+        line-height: 27px;
+    }
+
+    .double-input {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 169px;
+
+    }
+    
+    .text_input_s {
+        max-width: 70px;
+    }
+    
+    //Submit Button CSS
+    input[type=submit] {
+        min-width: 110px;
+        background-color: variables.$my-blue1;
+        border: none;
+        color: variables.$text-color3;
+        border-radius: 2px;
+        font-size: 11px;
+        margin: 30px 0;
+
+    }
+
+    input[type=submit]:hover {
+        border: 2px solid variables.$my-blue3;
+        background-image: linear-gradient(top,variables.$my-blue2, variables.$my-blue3);
+    }
+
+
+    .submit-btn {
+        justify-content: center;
+    }
+
+}
+
+.adv-links {
+    padding-bottom: 15px;
+    ul {
+        list-style-type: none;
+        margin-left: -40px;
+        line-height: 18px;
+    }
+
+}
+
+
+//Footer
+footer{
+    background-color: variables.$bg-gray;
+    color:  variables.$text-color1;
+    width: 100%;
+    margin-top: auto;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-flow: row nowrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        padding:auto 30px;
+        
+    }
+
+
+    a {
+        display: block;
+        padding: 14px 16px;
+        text-decoration: none;
+        color:  variables.$text-color2;
+    }
+}
+
+
+
+/****************************************
+Tablet and Desktop
+****************************************/
+
+
+@media screen and (min-width: 364px) {
+    form {
+
+        legend {
+            margin-bottom: 0px;
+        }
+
+        .field {
+            flex-flow: row nowrap;
+            align-items: center;
+        }
+
+        label, #btn-space {
+            min-width: 180px;
+            margin: 15px 0;
+        }
+
+        input, .select_field, .double-input{
+            max-width: none;
+            flex: 0.5 1 60%;
+        }
+
+        .double-input {
+            justify-content: space-between;
+    
+        }
+        
+        .text_input_s {
+            min-width: 45%;
+        }
+
+        input[type=submit] {
+            flex: 0;
+            margin:10px 0 0;
+        }
+
+        .submit-btn {
+            justify-content: flex-end;
+        }
+    
+    }
+}
+
+@media only screen and (min-width: 620px) {
+    footer{
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: space-between;
+        padding: auto;
+    }
+}

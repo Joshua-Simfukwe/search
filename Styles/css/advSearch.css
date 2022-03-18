@@ -16,4 +16,183 @@ html a:hover, body a:hover {
   text-decoration: underline;
 }
 
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px;
+  height: 64px;
+  font-size: 12px;
+}
+nav .logo {
+  display: flex;
+  max-width: 152px;
+  min-width: 152px;
+  text-align: center;
+  align-items: center;
+}
+nav img {
+  width: 70px;
+  height: 25px;
+}
+
+#header {
+  color: #d93025;
+  font-size: 20px;
+  padding: 25px 35px;
+}
+
+.divider {
+  margin: 0 0 20px 0;
+  padding: 0;
+  border-bottom: 1px solid #dfdcdc;
+}
+
+form {
+  max-width: 1140px;
+  min-width: 200px;
+  width: 80%;
+  margin: 0px 2% 0 45px;
+}
+form fieldset {
+  border: none;
+  padding-bottom: 30px;
+}
+form legend, form h3 {
+  width: 169px;
+  height: 30px;
+  font-size: 16px;
+  min-height: 42px;
+  font-weight: 500;
+  color: #202124;
+  margin-bottom: -25px;
+}
+form .field {
+  display: flex;
+  flex-flow: column;
+}
+form label {
+  margin: 20px 0;
+}
+form input, form select {
+  max-width: 169px;
+  height: 29px;
+  border: 1px solid #dfdcdc;
+}
+form input:focus {
+  border: 1px solid #4787ed;
+  outline: none;
+}
+form select {
+  background-color: #f5f5f5;
+  font-size: 11px;
+  font-weight: bold;
+  line-height: 27px;
+}
+form .double-input {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 169px;
+}
+form .text_input_s {
+  max-width: 70px;
+}
+form input[type=submit] {
+  min-width: 110px;
+  background-color: #4d90fe;
+  border: none;
+  color: white;
+  border-radius: 2px;
+  font-size: 11px;
+  margin: 30px 0;
+}
+form input[type=submit]:hover {
+  border: 2px solid #3079ed;
+  background-image: linear-gradient(top, #4787ed, #3079ed);
+}
+form .submit-btn {
+  justify-content: center;
+}
+
+.adv-links {
+  padding-bottom: 15px;
+}
+.adv-links ul {
+  list-style-type: none;
+  margin-left: -40px;
+  line-height: 18px;
+}
+
+footer {
+  background-color: #f5f5f5;
+  color: #202124;
+  width: 100%;
+  margin-top: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+}
+footer ul {
+  list-style-type: none;
+  display: flex;
+  flex-flow: row nowrap;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  padding: auto 30px;
+}
+footer a {
+  display: block;
+  padding: 14px 16px;
+  text-decoration: none;
+  color: #949494;
+}
+
+/****************************************
+Tablet and Desktop
+****************************************/
+@media screen and (min-width: 364px) {
+  form legend {
+    margin-bottom: 0px;
+  }
+  form .field {
+    flex-flow: row nowrap;
+    align-items: center;
+  }
+  form label, form #btn-space {
+    min-width: 180px;
+    margin: 15px 0;
+  }
+  form input, form .select_field, form .double-input {
+    max-width: none;
+    flex: 0.5 1 60%;
+  }
+  form .double-input {
+    justify-content: space-between;
+  }
+  form .text_input_s {
+    min-width: 45%;
+  }
+  form input[type=submit] {
+    flex: 0;
+    margin: 10px 0 0;
+  }
+  form .submit-btn {
+    justify-content: flex-end;
+  }
+}
+@media only screen and (min-width: 620px) {
+  footer {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: auto;
+  }
+}
+
 /*# sourceMappingURL=advSearch.css.map */
